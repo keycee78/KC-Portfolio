@@ -1,0 +1,257 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+.landingContainer {
+    position:relative; 
+    display: inline-block; 
+}
+
+.landingPic {
+    width: 85%; 
+    height: auto; 
+    display: block; 
+}
+.landingPicRes{
+    display: none;
+}
+.landingPicRes2{
+    display: none;
+}
+
+.name {
+    position: absolute;
+    top: 22%; 
+    right: 8%; 
+    color: #252525; 
+    font-size: 65px; 
+    font-weight: bold; 
+    padding: 10px 20px;
+    border-radius: 5px; 
+    text-shadow:#bdbcbc 4px 4px 3px ;
+    
+}
+.position {
+    position: absolute;
+    top: 34.5%;
+    right: 13.5%;
+    font-size: 28px;
+    text-shadow:#bdbcbc 4px 4px 3px ;
+    
+}
+.location{
+    position: absolute;
+    top: 40.5%; 
+    right: 22.9%;
+    font-size: 22px;
+    text-shadow:#bdbcbc 4px 4px 3px ;
+}
+.techStack{
+    position: absolute;
+    gap: 15px;
+    display: flex;
+    top: 54%; 
+    right: 14%;
+}
+.techStack img{
+  
+    width: 40px;
+    height: 40px;
+   opacity: 80%;
+   
+}
+
+.bluefirstword{
+    color:#0352AD  
+}
+.yellowcavite{
+    color:#E58E00  
+}
+
+.redfirstword{
+    color:#C20000 ;
+}
+.yellowsecondword{
+    color:#E58E00  
+}
+.greenthirdword{
+    color:#24AF08 
+}
+.php{
+    transition: transform 0.3s ease-in-out;
+}
+.php:hover{
+    transform: scale(1.5) translateY(-10px);
+}
+.figma{
+    transition: transform 0.3s ease-in-out;
+}
+.figma:hover{
+    transform: scale(1.5) translateY(-10px);
+}
+.ps{
+    transition: transform 0.3s ease-in-out;
+}
+.ps:hover{
+    transform: scale(1.5) translateY(-10px);
+}
+.react{
+    transition: transform 0.3s ease-in-out;
+}
+.react:hover{
+    transform: scale(1.5) translateY(-10px);
+}
+.js{
+    transition: transform 0.3s ease-in-out;
+}
+.js:hover{
+    transform: scale(1.5) translateY(-10px);
+}
+.css{
+    transition: transform 0.3s ease-in-out;
+}
+.css:hover{
+    transform: scale(1.5) translateY(-10px);
+}
+.html{
+    transition: transform 0.3s ease-in-out;
+}
+.html:hover{
+    transform: scale(1.5) translateY(-10px);
+}
+.java{
+    transition: transform 0.3s ease-in-out;
+}
+.java:hover{
+    transform: scale(1.5) translateY(-10px);
+}
+
+/* Responsive Design */
+
+
+@media (max-width: 1150px) {
+    .landingContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .name, .position, .location {
+        position: static;
+        text-align: center;
+        margin: 5px 0;
+        z-index: 2;
+    }
+    .name {
+        margin-top: 60vh;
+        font-size: 6vw;
+        
+    }
+    .position {
+        font-size: 4vw;
+    }
+    .location {
+        font-size: 3vw;
+    }
+    .techStack {
+        position: static;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    .landingPic {
+       display: none;
+    }
+    .landingPicRes{
+        display: block;
+        position: absolute;
+      
+    }
+    
+}
+
+
+
+@media (min-width:430px) and (max-width: 486px) {
+    .name {
+        margin-top: 70vh;
+        font-size: 9vw;
+    }
+    .position {
+        font-size: 5vw;
+    }
+    .location {
+        font-size: 4vw;
+    }
+    .techStack img {
+        width: 30px;
+        height: 30px;
+    }
+        
+    .landingPicRes{
+        display: none;
+      
+    }
+     .landingPicRes2{   
+        display: block;
+        position: absolute;
+    }
+}
+
+@media (min-width:376px) and (max-width: 414px) {
+
+    
+    .name {
+        margin-top: 70vh;
+        font-size: 10vw;
+    }
+    .position {
+        font-size: 5vw;
+    }
+    .location {
+        font-size: 4vw;
+    }
+    .techStack img {
+        width: 30px;
+        height: 30px;
+    }
+        
+    .landingPicRes{
+        display: none;
+      
+    }
+     .landingPicRes2{   
+        display: block;
+        position: absolute;
+    }
+     
+}
+@media (min-width:330px) and (max-width: 375px) {
+
+    .name {
+        margin-top: 85vh;
+        font-size: 9vw;
+    }
+    .position {
+        font-size: 5vw;
+    }
+    .location {
+        font-size: 4vw;
+    }
+    .techStack img {
+        width: 30px;
+        height: 30px;
+    }
+        
+    .landingPicRes{
+        display: none;
+      
+    }
+     .landingPicRes2{   
+        display: block;
+        position: absolute;
+    }
+     
+}
+
