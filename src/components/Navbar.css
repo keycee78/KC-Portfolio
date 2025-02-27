@@ -57,8 +57,9 @@ body {
     width: 100%;
 }
 .close { 
-    width: 40px;
-    height: auto;
+    width: 25px;
+    height: 25px;
+    margin: 25px;
 }
 .sidebarcategories{
     display:inline-block;
@@ -78,7 +79,8 @@ body {
     .menu{
         display: inline;
         cursor: pointer;
-
+        width: 30px;
+        height: 25px;
     }
     .navbarcategories{
         display: none;

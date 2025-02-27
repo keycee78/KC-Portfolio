@@ -1,5 +1,5 @@
-@media screen and (max-width:768px){
-    .headline{
-        text-align: right;
+@media screen and (max-width: 768px) {
+    .project-card .overlay {
+      opacity: 1 !important;
     }
-}
+  }
