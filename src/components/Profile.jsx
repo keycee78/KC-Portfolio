@@ -30,7 +30,7 @@ function prevSlide() {
 }
 
 function nextSlide() {
-  if (slide < 4) {
+  if (slide < 2) {
     setSlide(slide + 1);
   }
 }
@@ -119,10 +119,10 @@ function nextSlide() {
       <div className="space-y-10 w-full">
         <div className="flex items-start space-x-5">
           <img src={email} alt="Email" className="w-10 h-12" />
-          <div>
-            <p className="font-bold">Email:</p>
-            <a href="mailto:kerwin.cortina@yahoo.com">kerwin.cortina@yahoo.com</a> <br />
-            <a href="mailto:kerwin.c78@gmail.com">kerwin.c78@gmail.com</a>
+         <div >
+            <p className="font-bold ">Email:</p>
+            <a href="mailto:kerwin.cortina@yahoo.com" className='underline'>kerwin.cortina@yahoo.com</a> <br />
+            <a href="mailto:kerwin.c78@gmail.com" className='underline'>kerwin.c78@gmail.com</a>
           </div>
         </div>
 
@@ -139,7 +139,7 @@ function nextSlide() {
           <img src={git} alt="Github" className="w-12 h-12" />
           <div>
             <p className="font-bold">GitHub:</p>
-            <a href="https://github.com/keycee78" target="_blank" >https://github.com/keycee78</a>
+            <a href="https://github.com/keycee78" className='underline' target="_blank" >https://github.com/keycee78</a>
           </div>
         </div>
 
@@ -147,8 +147,8 @@ function nextSlide() {
           <img src={socials} alt="Social Media" className="w-12 h-14" />
           <div>
             <p className="font-bold">Social Media:</p>
-            <a href="https://www.facebook.com/keyceeeeezz" target="_blank">facebook.com/keyceeeeezz</a> <br />
-            <a href="https://www.instagram.com/keycceez/?hl=en" target="_blank">instagram.com/keycceez/?hl=en</a>
+            <a href="https://www.facebook.com/keyceeeeezz" className='underline' target="_blank">facebook.com/keyceeeeezz</a> <br />
+            <a href="https://www.instagram.com/keycceez/?hl=en"  className='underline' target="_blank">instagram.com/keycceez/?hl=en</a>
           </div>
         </div>
       </div>
@@ -171,7 +171,7 @@ function nextSlide() {
 
 <div className={`${toggle === 4 ? "block" : "hidden"}`}>
         <div className="container mx-auto px-5 md:px-40 py-10 text-center">
-          {[certificate1, sample].map((img, idx) => (
+          {[certificate1, sample ].map((img, idx) => (
             <img key={idx} src={img} alt="certificate" className={`${slide === idx + 1 ? "block mx-auto" : "hidden"}`} />
           ))}
           <div className="flex justify-center space-x-5 mt-5">
